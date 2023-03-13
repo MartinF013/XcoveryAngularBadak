@@ -1,0 +1,59 @@
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+
+    <!-- Icon -->
+    <br>
+    <div class="fadeIn first">
+      <img src="assets/Logo-Badak.svg"  width="150" height="150" viewBox="0 0 150 150" fill="none">
+    </div>
+
+    <!-- Login -->
+    <h1>Registrate!</h1>
+
+    <p id="register-notification" class="text-danger fw-bold"></p>
+    <form (ngSubmit)="validateForm()">
+
+      <input type="text" id="firstName" class="fadeIn second" name="First Name" placeholder="Nombre "
+        formControlName="firstName">
+      <p class="form-control-feedback text-danger fw-semibold text-center">{{firstNameSubmit}}</p>
+
+      <input type="text" id="lastName" class="fadeIn third" name="Last Name" placeholder="Apellido"
+        formControlName="lastName">
+
+
+      <p class="form-control-feedback text-danger fw-semibold text-center">{{lastNameSubmit}}</p>
+      <input type="date" id="birthday" class="fadeIn fourth" onfocus="(this.type='date')" name="Birthdate"
+        placeholder="Fecha de nacimiento" style="tab-size: 8;" formControlName="birthday">
+      <!-- max="{{date | date:'yyyy-MM-dd'}}" min="{{minDate | date:'yyyy-MM-dd'}}" -->
+
+      <p class="form-control-feedback text-danger fw-semibold text-center">{{birthdaySubmit}}</p>
+      <input type="email" id="email" class="fadeIn fifth" name="Email" placeholder="Correo" formControlName="email">
+      <p class="form-control-feedback text-danger fw-semibold text-center">{{emailSubmit}}</p>
+
+
+      <input type="password" id="password" class="fadeIn sixth" name="Password" placeholder="Contraseña"
+        formControlName="password">
+      <br>
+      <br>
+
+      <input type="password" id="confirmPasswordSubmit" class="fadeIn sixth" name="confirmPasswordSubmit"
+        placeholder="Confirmar Contraseña" formControlName="confirmPasswordSubmit">
+      <p class="form-control-feedback text-danger fw-semibold text-center">{{confirmPasswordSubmit}}</p>
+      <input type="submit" class="fadeIn sixth btn btn-primary" value="Regístrate">
+    </form>
+
+    <!-- Terms & Privacy Policy -->
+    <div>
+      <h2>   Al registrarte aceptas los <a class="underlineHover">Terminos y condiciones </a></h2>
+    </div>
+    <br>
+
+    <!-- Already have an account-->
+    <div id="formFooter">
+      <div> <h2>¿Ya tienes una cuenta?</h2>  </div>
+
+      <a class="underlineHover">Iniciar sesión</a>
+    </div>
+
+  </div>
+</div>

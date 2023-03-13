@@ -1,0 +1,20 @@
+
+     
+            <mat-card id="invoiceCard">
+                <mat-card-header>
+                  <mat-card-title>  <h1 contenteditable="true" id="cardInfo">
+                   <!-- {{sharedDataService.sharedValue}} -->
+                  </h1>
+       
+                </mat-card-title>
+                  <mat-card-subtitle  id="cardTitle" style="color: white; font-weight: bolder;">Invoice Number</mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-actions id="cardButtons">
+                  <button mat-button  id="closeButton" (click)="resetCard()"><span nz-icon nzType="close" nzTheme="outline" ></span></button>
+                  <button mat-button id="checkButton"  (click)="onButtonClick() "><span nz-icon nzType="check" nzTheme="outline"   ></span></button>
+                  
+                  
+                </mat-card-actions>
+                
+              </mat-card>
+        

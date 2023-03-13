@@ -1,0 +1,67 @@
+#invoiceCard{
+    border-radius: 10px;
+     background-color: #39424a;
+     position: absolute;
+     justify-content: end;
+     margin-left: 950px;
+     margin-top: 180px;     
+     visibility: hidden;
+     border-top: solid  #ee6e18
+   //   border-top: linear-gradient(180deg, rgba(188, 86,  18, 1.0) 80%, rgba(33, 150, 243, 0) 30%);
+ }
+
+ 
+ h1 {
+    color: #ee6e18;
+    font-size: x-large  ;
+    font-weight: 100;
+ }
+
+  h1:focus {
+    outline: 
+    none;
+ }
+
+ button {
+    height: 60px;
+    width: 60px;
+    
+    border-radius: 50%;
+    align-items:center;
+    justify-content: center;
+    // background-color: white;
+    margin: 3px;
+    
+ }
+
+ #cardButtons {
+    padding-bottom: 10px;
+    
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+ }
+
+ span {
+    color: white;
+    font-size: 20px;
+
+}
+ 
+#checkButton{
+    background-color: gray;
+
+   }
+
+button:hover{
+    background-color: #277afc !important;
+   // transition: 0.7s;
+   
+
+}
+
+
+button:hover span   {
+    color: white !important;
+}
+

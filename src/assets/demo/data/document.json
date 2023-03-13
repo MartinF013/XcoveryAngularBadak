@@ -1,0 +1,40 @@
+{
+    "data": [
+        {
+            "id": "1",
+            "status": "por-revisar",
+            "documentName": "Factura 1",
+            "recievedDate": "2023-03-03",
+            "modifiedDate": "2019-01-01",
+            "modifiedBy": "martinfuentes@badak.mx",
+            "activity":17
+        },
+        {
+            "id": "2",
+            "status": "por-revisar",
+            "documentName": "Factura 2",
+            "recievedDate": "2019-01-01",
+            "modifiedDate": "2019-01-01",
+            "modifiedBy": "luislopez@badak.mx",
+            "activity":20
+        },
+        {
+            "id": "3",
+            "status": "pendiente",
+            "documentName": "Factura 3",
+            "recievedDate": "2019-01-01",
+            "modifiedDate": "2019-01-01",
+            "modifiedBy": "juanperez@badak.mx",
+            "activity":31
+        },
+        {
+            "id": "4",
+            "status": "por-revisar",
+            "documentName": "Factura 4",
+            "recievedDate": "2019-01-01",
+            "modifiedDate": "2019-01-01",
+            "modifiedBy": "juanbravo@badak.mx",
+            "activity":50
+        }
+    ]
+}

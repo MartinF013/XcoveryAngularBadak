@@ -1,0 +1,39 @@
+
+<h1>Historial de documentos</h1>
+<app-tabla-historial></app-tabla-historial>
+
+<h1>Subir  Documentos</h1>
+<div class="grid">
+ 
+
+    <!-- Centered upload file section -->
+    <div class="centered ">
+        <div class="file-upload">
+            <!-- <button class="file-upload-btn" type="button" (click)="openFileSelector()">Agregar Archivo</button> -->
+            <div class="image-upload-wrap" *ngIf="!fileSelected">
+                <input class="file-upload-input" type='file' (change)="fileChangeEvent($event)" />
+                <div class="drag-text">
+                    <h3>Arrastra y suelta un archivo o selecciona</h3>
+                </div>
+            </div>
+            <div class="file-upload-content" *ngIf="fileSelected">
+                <img class="file-upload-image" alt="Uploaded Image"
+                    src="https://www.iconpacks.net/icons/2/free-file-icon-1453-thumb.png" />
+                <div class="image-title-wrap">
+                    <button type="button" (click)="removeFile()" class="remove-image">Eliminar<span
+                            class="image-title">{{fileName}}</span></button>
+                    <br />
+                    <br />
+                    <a href="/#/preview"><button class="remove-image" style="background-color: #3990FF;"
+                            type="button">Subir</button></a>
+
+                </div>
+                <!-- Upload button -->
+
+
+            </div>
+        </div>
+    </div>
+
+
+</div> 
